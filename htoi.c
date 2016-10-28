@@ -1,12 +1,14 @@
+/* convert hex with optional '0x' or '0X' to integer 
+
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
-double htoi(char s[])
+int htoi(char s[])
 {
     int i;
-    double n = 0;
-    for(i = 0;isdigit(s[i]) || isalpha(s[i]);i++)
+    int n = 0;
+    for(i = 0; isdigit(s[i]) || isalpha(s[i]); i++)
         {
             if(i == 0){
                 if(s[i] == '0')
@@ -36,5 +38,5 @@ double htoi(char s[])
 
 int main()
 {
-    printf("%5.0f\n",htoi("ABCD"));
+    printf("%5d\n",htoi("ABCD"));
 }
