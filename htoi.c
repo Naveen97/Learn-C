@@ -1,4 +1,4 @@
-/* convert hex with optional '0x' or '0X' to integer 
+/* convert hex with optional '0x' or '0X' to integer */
 
 #include <stdio.h>
 #include <ctype.h>
